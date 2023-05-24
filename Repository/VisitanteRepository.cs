@@ -1,4 +1,5 @@
 ﻿using Adopet.Data;
+using Adopet.Models;
 
 namespace Adopet.Repository
 {
@@ -12,41 +13,50 @@ namespace Adopet.Repository
 
         // PUT / PATCH
         // Atender uma requisição capaz de atualizar um ou mais campos de um visitante
-        public void AtualizarVisitante()
+        public Visitante AtualizarVisitante(int id, Visitante visitante)
         {
-
+            _context.Visitantes.Update(visitante);
+            _context.SaveChanges();
+            return visitante;
         }
 
         // POST
         // Atender uma requisição POST que crie um novo visitante, caso todos os campos
         // estejam preenchido e validados
-        public void CriarVisitante()
+        public Visitante CriarVisitante(Visitante visitante)
         {
-
+            _context.Visitantes.Add(visitante);
+            _context.SaveChanges();
+            return visitante;
         }
 
         // GET
         // Atender uma requisição GET que retorne um Json com todos os visitantes
         // Caso não exista visitante cadastrado, retornar uma mensagem de "Não encontrado"
-        public void ExibirTodosVisitantes()
+        public List<Visitante> ExibirTodosVisitantes()
         {
-
+            return _context.Visitantes.ToList();
         }
 
         //GET
         // Atender uma requisição GET que retorne um único visitante
         // caso o visitante não esteja cadastrado, informar uma mensagem de "Não encontrado"
-        public void ExibirVisitanteById()
+        public Visitante ExibirVisitanteById(int id)
         {
-
+            return _context.Visitantes.Find(id);
         }
 
         // DELETE
         // Atender uma requisição capaz de deletar um visitante pelo ID
         // Retornar uma mensagem de sucesso ou falha
-        public void DeletarVisitante()
+        public void DeletarVisitante(int id)
         {
-
+            var visitante = ExibirVisitanteById(id);
+            if (visitante != null)
+            {
+                _context.Visitantes.Remove(visitante);
+                _context.SaveChanges();
+            }
         }
     }
 }
