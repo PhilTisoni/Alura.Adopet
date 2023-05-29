@@ -29,7 +29,7 @@ Após clonar o projeto, abra o executável na pasta bin.
 
 Após finalizar a tarefa, crie uma nova branch e adicione um commit
 ```bash
-# Criar nova branch e subir informações para o GitHub (substitua os nomes em maiúscula pelas informações desejadas)
+# Substitua os nomes em maiúscula pelas informações desejadas)
 git checkout -b NOME DA BRANCH
 git add .
 git commit -m "BREVE DESCRIÇÃO DA TAREFA"
