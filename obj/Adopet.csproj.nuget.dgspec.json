@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mauricio\\Desktop\\CodeRDIversity\\CSharp\\Adopet\\Adopet.csproj": {}
+    "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mauricio\\Desktop\\CodeRDIversity\\CSharp\\Adopet\\Adopet.csproj": {
+    "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mauricio\\Desktop\\CodeRDIversity\\CSharp\\Adopet\\Adopet.csproj",
+        "projectUniqueName": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj",
         "projectName": "Adopet",
-        "projectPath": "C:\\Users\\Mauricio\\Desktop\\CodeRDIversity\\CSharp\\Adopet\\Adopet.csproj",
+        "projectPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj",
         "packagesPath": "C:\\Users\\Mauricio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mauricio\\Desktop\\CodeRDIversity\\CSharp\\Adopet\\obj\\",
+        "outputPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mauricio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,21 +43,25 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.7, )"
+            },
+            "SQLitePCLRaw.lib.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -78,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

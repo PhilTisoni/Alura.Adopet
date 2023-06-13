@@ -1,9 +1,10 @@
 ﻿using Adopet.Data;
 using Adopet.Models;
+using Adopet.Repository.Interfaces;
 
 namespace Adopet.Repository
 {
-    public class VisitanteRepository
+    public class VisitanteRepository : IVisitante
     {
         private readonly AppDbContext _context;
         public VisitanteRepository(AppDbContext context)
@@ -13,7 +14,7 @@ namespace Adopet.Repository
 
         // PUT / PATCH
         // Atender uma requisição capaz de atualizar um ou mais campos de um visitante
-        public Visitante AtualizarVisitante(int id, Visitante visitante)
+        public Visitante AtualizarVisitante(Visitante visitante)
         {
             _context.Visitantes.Update(visitante);
             _context.SaveChanges();
