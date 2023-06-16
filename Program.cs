@@ -1,4 +1,6 @@
 using Adopet.Data;
+using Adopet.Repository;
+using Adopet.Repository.Interfaces;
 
 namespace Adopet
 {
@@ -11,6 +13,7 @@ namespace Adopet
             builder.Services.AddControllers();
 
             builder.Services.AddDbContext<AppDbContext>();
+            builder.Services.AddTransient<ITutor, TutorRepository>();
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

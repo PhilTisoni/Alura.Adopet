@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xKXqy+8hyo1GYe1EGrYNpAGBOFGCyu2SWVGPqa4Nbu4Y5fgQyQwQem0KyOtoocuU25Ic8b2l4BEIL3irg6rQzw==",
+  "dgSpecHash": "vxycJWy3wfBhr4glUgbyy26q2RGakgeOt1LPJh2xCosxpM8PctMq588bf1jcIjWOimFn4MLBxFxJIo409MPYXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj",
+  "projectFilePath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Alura.Adopet\\Adopet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mauricio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mauricio\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.7\\microsoft.data.sqlite.core.7.0.7.nupkg.sha512",

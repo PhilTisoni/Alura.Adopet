@@ -11,15 +11,21 @@ namespace Adopet.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Visitante",
+                name: "Tutor",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    nome = table.Column<string>(type: "TEXT", maxLength: 80, nullable: false),
+                    email = table.Column<string>(type: "TEXT", nullable: false),
+                    senha = table.Column<string>(type: "TEXT", nullable: false),
+                    confirmarSenha = table.Column<string>(type: "TEXT", nullable: false),
+                    telefone = table.Column<string>(type: "TEXT", nullable: false),
+                    mensagem = table.Column<string>(type: "TEXT", maxLength: 80, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Visitante", x => x.Id);
+                    table.PrimaryKey("PK_Tutor", x => x.Id);
                 });
         }
 
@@ -27,7 +33,7 @@ namespace Adopet.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Visitante");
+                name: "Tutor");
         }
     }
 }

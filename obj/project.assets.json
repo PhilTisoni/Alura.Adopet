@@ -1745,11 +1745,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj",
+      "projectUniqueName": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Alura.Adopet\\Adopet.csproj",
       "projectName": "Adopet",
-      "projectPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\Adopet.csproj",
+      "projectPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Alura.Adopet\\Adopet.csproj",
       "packagesPath": "C:\\Users\\Mauricio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Backup\\Alura.Adopet\\obj\\",
+      "outputPath": "C:\\Users\\Mauricio\\Desktop\\Adopet\\Alura.Adopet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mauricio\\AppData\\Roaming\\NuGet\\NuGet.Config",

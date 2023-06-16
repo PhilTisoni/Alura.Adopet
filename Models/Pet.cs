@@ -5,17 +5,19 @@ namespace Adopet.Models
     [Table("Pet")]
     public class Pet
     {
+        public int Id { get; set; }
+
         [Column("nome")]
-        private string Nome { get; set; }
+        public string Nome { get; set; }
 
         [Column("idade")]
-        private int Idade { get; set; }
+        public int Idade { get; set; }
 
         [Column("porte")]
-        private string Porte { get; set; }
+        public string Porte { get; set; }
 
         [Column("comportamento")]
-        private string Comportamento { get; set; }
+        public string Comportamento { get; set; }
         
     }
 }
