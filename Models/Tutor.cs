@@ -7,10 +7,11 @@ namespace Adopet.Models
     [Table("Tutor")]
     public class Tutor
     {
+        [Key, Required]
         public int Id { get; set; }
 
         [Column("nome"), Required(ErrorMessage = "Campo Obrigatório"), 
-            StringLength(80, ErrorMessage = "O nome não pode ter mais de 80 caracteres")]
+            MaxLength(80, ErrorMessage = "O nome não pode ter mais de 80 caracteres")]
         public string Nome { get; set; }
 
         [Column("email"), Required(ErrorMessage = "Campo Obrigatório")]

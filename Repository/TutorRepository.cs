@@ -12,16 +12,16 @@ namespace Adopet.Repository
             _context = context; 
         }
 
-        public Tutor AtualizarTutor(Tutor tutor)
+        public Tutor CriarTutor(Tutor tutor)
         {
-            _context.Tutores.Update(tutor);
+            _context.Tutores.Add(tutor);
             _context.SaveChanges();
             return tutor;
         }
 
-        public Tutor CriarTutor(Tutor tutor)
+        public Tutor AtualizarTutor(Tutor tutor)
         {
-            _context.Tutores.Add(tutor);
+            _context.Tutores.Update(tutor);
             _context.SaveChanges();
             return tutor;
         }

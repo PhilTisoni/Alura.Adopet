@@ -1,5 +1,7 @@
-﻿using Adopet.Models;
+﻿using Adopet.Data.Dtos;
+using Adopet.Models;
 using Adopet.Repository.Interfaces;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Adopet.Controllers
@@ -8,10 +10,12 @@ namespace Adopet.Controllers
     public class TutorController : Controller
     {
         private readonly ITutor _tutor;
+        private readonly IMapper _mapper;
 
-        public TutorController(ITutor tutor)
+        public TutorController(ITutor tutor, IMapper mapper)
         {
             _tutor = tutor;
+            _mapper = mapper;
         }
 
         // POST
@@ -19,9 +23,10 @@ namespace Adopet.Controllers
         // estejam preenchido e validados
         // Retornar Json com informações do tutor criado
         [HttpPost("[action]")]
-        public Tutor CriarTutor([FromQuery] Tutor tutor)
+        public IActionResult CriarTutor([FromBody] CriarTutorDto tutorDto)
         {
-            return _tutor.CriarTutor(tutor);
+            Tutor tutor = _tutor.CriarTutor(_mapper.Map<Tutor>(tutorDto));
+            return CreatedAtAction(nameof(ExibirTutorById), new{id = tutor.Id}, tutor);            
         }
 
         // PUT / PATCH
