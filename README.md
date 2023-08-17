@@ -1,14 +1,14 @@
-# Em Andamento...
-<img style = "width: 300px" src = "https://raw.githubusercontent.com/paulobarone/adopet/main/public/img/logotipo-blue.svg" alt = "Adopet"> 
+# Adopet
+
+<img style = "width: 300px" src = "https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt = "Alura"> 
 
 ## Sobre o Projeto
 Iniciado em Maio de 2023, esse projeto visa criar uma aplicação **ASP NET** com conexão de **banco de dados** para simular um programa de adoção de animais. Esse desafio foi proposto pela **Alura**, organizando as tarefas em 3 etapas:
 
-- Abstração de classes e criação de CRUD (Creat, Read, Update, Delete)
-- Manipulação do banco de dados e integração com Front-End
-- Testes em CI e CD
+- [x] Abstração de classes e criação de CRUD (Creat, Read, Update, Delete)
+- [ ] Manipulação do banco de dados e integração com Front-End
+- [ ] Testes em CI e CD
 
-<img style = "width: 300px" src = "https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt = "Alura"> 
 
 ## Tecnologias Utilizadas
 - Linguagem C# / ASP Net
@@ -18,40 +18,37 @@ Iniciado em Maio de 2023, esse projeto visa criar uma aplicação **ASP NET** co
 - DBeaver
 - Swagger / Postman
 
-## Como executar o projeto
+# Como Clonar o Projeto
+
+- Instale o [Git](https://git-scm.com/downloads) no seu computador. Durante a instalação, certifique-se se a opção **Git Bash** está adicionada.
+- Após a instalação, crie uma pasta em sua área de trabalho
+- Dentro da pasta, clique com o botão direito e selecione **Git Bash Here**
+- Após abrir o terminal, copie o seguinte comando:
+   
 ```bash
-# clonar repositório
 git clone https://github.com/PhilTisoni/Alura.Adopet.git
 ```
-Após clonar o projeto, abra o executável na pasta bin.
+O projeto deverá ser clonado para a sua pasta. Abra a solução em seu compilador de preferência.
 
-## Para a equipe
-
-Após finalizar a tarefa, crie uma nova branch e adicione um commit
-```bash
-# Substitua os nomes em maiúscula pelas informações desejadas)
-git checkout -b NOME DA BRANCH
-git add .
-git commit -m "BREVE DESCRIÇÃO DA TAREFA"
-git push -u origin NOME DA BRANCH
-```
-Antes de fazer o Push, certifique-se de estar na branch correta
-
-## Índice
-
-- <a href = "#Autores">Autores</a>
+<details><summary>Primeira Etapa</summary>
 
 ## Primeira Etapa
 
 Após a abstração das informações contidos no Figma, elaboramos um diagrama de classes para o planejamento do projeto inicial. Realizamos a implementação da base de dados via Data Annotation para o DBeaver e desenvolvemos a API com rotas CRUD para a classe Visitante. Abaixo alguns testes via Swagger:
 
 (Add fotos)
+<\details>
 
+<details><summary>Segunda Etapa</summary>
 ## Segunda Etapa
-- Criação de mais um modelo/entidade, rotas CRUD e relacionais, buscas na base via parâmetros de query, testes de unidade e integração.
+Estão sendo inseridas mais entidades no modelo anterior, foram utilizadas rotas CRUD e buscas na base via parâmetros query, além de construir os relacionamentos das tabelas no banco de dados através do EntityFramework.
+<\details>
 
+<details><summary>Terceira Etapa</summary>  
 ## Terceira Etapa
-- Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação.
+- Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação. Adição de testes de unidade e integração.
+<\details>
+
 
 # Autores
 - [Kelly Costa](https://www.linkedin.com/in/kelly-costa-5105b8241/ "Kelly Linkedin")
