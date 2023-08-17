@@ -37,16 +37,19 @@ O projeto deverá ser clonado para a sua pasta. Abra a solução em seu compilad
 Após a abstração das informações contidos no Figma, elaboramos um diagrama de classes para o planejamento do projeto inicial. Realizamos a implementação da base de dados via Data Annotation para o DBeaver e desenvolvemos a API com rotas CRUD para a classe Visitante. Abaixo alguns testes via Swagger:
 
 (Add fotos)
+
 <\details>
 
 <details><summary>Segunda Etapa</summary>
 ## Segunda Etapa
 Estão sendo inseridas mais entidades no modelo anterior, foram utilizadas rotas CRUD e buscas na base via parâmetros query, além de construir os relacionamentos das tabelas no banco de dados através do EntityFramework.
+
 <\details>
 
 <details><summary>Terceira Etapa</summary>  
 ## Terceira Etapa
 - Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação. Adição de testes de unidade e integração.
+
 <\details>
 
 
