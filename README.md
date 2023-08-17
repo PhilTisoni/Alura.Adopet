@@ -38,19 +38,19 @@ Após a abstração das informações contidos no Figma, elaboramos um diagrama 
 
 (Add fotos)
 
-<\details>
+</details>
 
 <details><summary>Segunda Etapa</summary>
 ## Segunda Etapa
 Estão sendo inseridas mais entidades no modelo anterior, foram utilizadas rotas CRUD e buscas na base via parâmetros query, além de construir os relacionamentos das tabelas no banco de dados através do EntityFramework.
 
-<\details>
+</details>
 
 <details><summary>Terceira Etapa</summary>  
 ## Terceira Etapa
 - Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação. Adição de testes de unidade e integração.
 
-<\details>
+</details>
 
 
 # Autores
